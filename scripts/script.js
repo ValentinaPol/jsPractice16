@@ -64,7 +64,6 @@ var searchList = [
 //////////////  Task 1
 
 var list = document.querySelector('#task-list1');
-var textEmptyList = document.querySelector('#empty-list');
 
 list.addEventListener('click', function(event){
     if(event.target.tagName === 'I'){
@@ -100,7 +99,6 @@ var image = document.querySelector('.club-image img');
 var infoTeam = document.querySelector('.club-info');
 
 function getTeamInfo(){
-    var empty = [];
     for(var i = 0; i < infoList.length; i++){
         if(infoList[i].name === chooseTeam.options[chooseTeam.selectedIndex].text){
             image.setAttribute('src', infoList[i].url.replace('..', '.'));
